@@ -13,4 +13,5 @@ fullkey = (key2 * (len(decrypt)))
 
 FLG = xor (fullkey, decrypt)
 
+
 print(FLG)
