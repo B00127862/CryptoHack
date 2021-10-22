@@ -1,9 +1,11 @@
 from Crypto.PublicKey import RSA
 
-key = open('privacy_enhanced_mail.pem','r').read()
+with open ('privacy_enhanced_mail.pem','rb') as key_file:
 
-FLG = RSA.importKey(key)
+    FLG = RSA.importKey(key_file.read())
 
-print(FLG)
+    
+
+    print(FLG.d)
     
     
